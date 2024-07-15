@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+.result{
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: red;
+}
+
+.hero{
+
+      background-image: linear-gradient(rgba(9, 24, 53, 0.532),rgba(9, 21, 46, 0.532)),url(about.jpg);
+      background-attachment: fixed;
+      background-size: cover;
+      width: 100%;
+      height: 120vh;
+      overflow: hidden; 
+     
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+}
+
+header .navbar{
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.navbar .logo{
+  color: #fff;
+  font-size: 2.1rem;
+  font-weight: 300;
+  font-display: bold;
+}
+
+.navbar .logo span{
+  color: red;
+}
+.navbar .menu-links{
+  display: flex;
+  gap: 50px;
+}
+.navbar a{
+  color: #fff;
+  text-decoration: none;
+  transition: 0.2sec ease;
+}
+
+.navbar a:hover{
+  color: red;
+}
+
+
+.heading h1{
+     color: #be1506;
+     font-size: 55px;
+     text-align: center;
+     margin-top: 70px;
+}
+
+.container{
+    display:flex;
+    flex-direction: coloumn;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 65px auto;
+    
+}
+
+.hero-content{
+    flex: 1;
+    width: 600px;
+    margin: 0px 25px;
+}
+
+.hero-content h2{
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.hero-content p{
+    font-size: 24px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+    color: #f0d2d2;
+}
+
+.hero-content button{
+       display: inline-block;
+       background-color: #0c0661;
+       color: #fff;
+       padding: 12px 24px;
+       border-radius: 5px;
+       font-size: 20px;
+       border: none;
+       cursor: pointer;
+       transition: 0.2s ease;
+}
+
+.hero-content button:hover{
+       background: #0c0661;
+       transform: scale(1.1);
+}
+
+.hero-image{
+    flex: 1;
+    width: 600px;
+    margin: auto;
+  
+}
+
+.img{
+    border-radius: 10px;
+}
+.our-team{
+    position: absolute;
+    bottom: 0;
+    margin-top: auto;
+}
+.our-team h2{
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.our-team p{
+    font-size: 24px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+    color: #fff;
+    text-align: center;
+}
+.team{
+    position: absolute;
+    bottom: 0;
+    margin-top: auto;
+    align-items: center;
+}
+.team .team-mem{
+    font-size: 18px;
+    margin-bottom: -350px;
+    line-height: 1.5;
+    color: #db9110;
+    text-align: center;
+    display: flex;
+    gap: 50px;
+}
+
+@media screen and ( max-width:768px){
+
+    .heading h1{
+        font-size : 45px;
+        margin-top : 30px;
+    }
+    .hero{
+         margin: 0px;
+    }
+    .container{
+        width: 100%;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px 20px;
+    }
+    .hero-content{
+        width: 100%;
+        margin: 35px 0px;
+    }
+    .hero-content h2{
+        font-size: 30px;
+    }
+    .hero-contentp{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .hero-content button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+    .hero-image{
+        width: 100%;
+    }
+    @media screen and (max-width:900px){
+        header.show-mobile-menu::before{
+            content: "";
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            backdrop-filter: blur(5px);
+        }
+    
+        #menu-btn,#close-menu-btn{
+            display: block;
+        }
+        .navbar .menu-links{
+            position: fixed;
+            left: -260px;
+            top: 0;
+            flex-direction: column;
+            width: 260px;
+            height: 100vh;
+            background: #fff;
+            padding: 70px 40px 0;
+            transition: left 0.15s ease;
+        }
+    
+        header.show-mobile-menu .navbar .menu-links{
+            left:0;
+        }
+        
+       .navbar a{
+        color: #000; 
+       }
+    }
+    
+}
+ul{
+    list-style-type: none;
+}
